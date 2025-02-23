@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuiLearn</title>
+  <link rel="stylesheet" href="4style.css">
+</head>
+
+<body>
+  <!-- This is the cover Page -->
+  <div id="cover-page" class="page active">
+    <h1>Bienvenue à QuiLearn</h1>
+    <button id="start-btn" class="btn">Commencer</button>
+  </div>
+
+  <!-- This is the menu Page -->
+  <div id="menu-page" class="page hide">
+    <h1>Choisissez une activité</h1>
+    <button id="grammar-btn" class="btn">Exercices de grammaire</button>
+    <button id="storytelling-btn" class="btn">Storytelling</button>
+    <button id="hard-words-btn" class="btn">Mots Difficiles</button>
+  </div>
+
+  <!-- This is the grammar exercise page -->
+  <div id="grammar-page" class="page hide">
+    <h1>Exercices de grammaire</h1>
+    <p id="grammar-instruction">Conjuguez le verbe suivant au passé composé : Tomber</p>
+    <input id="user-answer" type="text" placeholder="Entrez votre réponse">
+    <button id="submit-grammar-btn" class="btn">Soumettre</button>
+    <p id="grammar-feedback"></p>
+    <button id="back-to-menu-grammar" class="btn">Retour au menu</button>
+  </div>
+
+  <!-- This is the storytelling page -->
+  <div id="storytelling-page" class="page hide">
+    <h1>Storytelling</h1>
+    <p id="story-text">
+      Un jour, Petit Poulet marche dans la ferme quand une noisette tombe sur sa tête. Effrayé, il pense que le ciel est en train de tomber. Il court prévenir le roi et rencontre en chemin Pauline la Poule, Carine la Cane et d’autres amis. Ensemble, ils paniquent et cherchent un abri. Gérard le Renard leur propose un endroit sûr, mais il les emmène dans sa grotte. Ils ne ressortent jamais, et Gérard, lui, n’a plus faim.
+    </p>
+    <div id="quiz-container">
+      <h2 id="question-text">Pourquoi Petit Poulet pense-t-il que le ciel tombe ?</h2>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+    <p id="hint-text"></p>
+    <p id="timer">Temps restant : <span id="time-left">15</span>s</p>
+    <button id="next-question-btn" class="btn hide">Suivant</button>
+    <button id="back-to-menu-story" class="btn">Retour au menu</button>
+    <p id="score">Score : <span id="score-value">0</span></p>
+  </div>
+
+  <!-- This is the hard words page -->
+  <div id="hard-words-page" class="page hide">
+    <h1>Mots Difficiles</h1>
+    <ul id="hard-words-list"></ul>
+    <button id="back-to-menu-hard-words" class="btn">Retour au menu</button>
+  </div>
+
+  <script src="4script.js"></script>
+</body>
+</html>
+
